@@ -1,0 +1,30 @@
+{
+  "name": "shopify-app-template-node",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "debug": "node --inspect-brk index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js --ignore ./frontend",
+    "serve": "cross-env NODE_ENV=production SHOPIFY_API_KEY=77f82e8c04e66b6953c994bb8b4a970d SHOPIFY_API_SECRET=e8792d738d04af9622307a1fa6854115 SCOPES=read_themes HOST=https://edee-103-251-59-253.in.ngrok.io node index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.13.1"
+  },
+  "dependencies": {
+    "@shopify/shopify-app-express": "^1.0.0",
+    "@shopify/shopify-app-session-storage-mongodb": "^1.0.0",
+    "axios": "^1.2.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3"
+  }
+}

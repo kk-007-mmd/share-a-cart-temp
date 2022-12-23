@@ -15,6 +15,7 @@
   "dependencies": {
     "@shopify/app": "3.25.0",
     "@shopify/cli": "3.25.0",
+    "@shopify/shopify-app-session-storage-memory": "^1.0.1",
     "cross-env": "^7.0.3"
   },
   "author": "admin"
